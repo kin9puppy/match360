@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="match.js"></script>
     <!-- woman images from http://fashion360animation.com/ -->
 </head>
 <body>
@@ -22,39 +22,33 @@
     </div>
 
     <!-- 360 viewers -->
-    <div class="row" id="panel-viewer">
+    <div class="row" id="panel-viewer" unselectable="on">
         <div class="col-md-3 col-sm-6 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="img/360/36.jpg" alt="">
-            </a>
+                <img id="turn-l" class="img-responsive" src="img/360/36.jpg" alt="">
         </div>
         <div class="col-md-3 col-sm-6 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="img/360/14.jpg" alt="">
-            </a>
+                <img id="turn-m" class="img-responsive" src="img/360/12.jpg" alt="">
         </div>
         <div class="col-md-3 col-sm-6 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="img/360/21.jpg" alt="">
-            </a>
+                <img id="turn-r" class="img-responsive" src="img/360/24.jpg" alt="">
         </div>
         <div class="col-md-3 col-sm-6 t-profile">
-            <h4>UptownGirly219</h4>
+            <h4><strong>UptownGirly219</strong></h4>
             <span class="basics">
-                29 year old woman <br>
-                London, UK <br>
-                Seeking men 26-35 within 50 miles
+                <b>29</b> year old woman <br>
+                <b>London</b>, UK <br>
+                Seeking men 26-35 <i>within 50 miles</i>
             </span>
             <span class="details">
-                    Relationship:Never Married<br>
-                    Have kids:No<br>
-                    Wants kids:Definitely<br>
-                    Ethnicity:White / Caucasian<br>
-                    Body type:About average<br>
-                    Height:5'7" (170cms)<br>
-                    Faith:Spiritual but not religious<br>
-                    Smoke:No Way<br>
-                    Drink:Social Drinker<br>
+                    Relationship: <span class="answer">Never Married</span><br>
+                    Have kids: <span class="answer">No</span><br>
+                    Wants kids: <span class="answer">Definitely</span><br>
+                    Ethnicity: <span class="answer">White / Caucasian</span><br>
+                    Body type: <span class="answer">About average</span><br>
+                    Height: <span class="answer">5'7" (170cms)</span><br>
+                    Faith: <span class="answer">Spiritual but not religious</span><br>
+                    Smoke: <span class="answer">No Way</span><br>
+                    Drink: <span class="answer">Social Drinker</span><br>
             </span>
 
         </div>
@@ -76,31 +70,6 @@
         </div>
     </div>
 </div>
+<script src="match.js"></script>
 </body>
-<style>
-    html{
-        background-color: #EDF3F7;
-    }
-    .t-container{
-        margin-top: 15px;
-    }
-    .t-header{
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .t-header .img-md{
-        max-width:200px;
-    }
-    .t-profile{
-        padding: 30px;
-    }
-    .t-profile .basics{
-        color: #0f75bd;
-        display: block;
-        margin-bottom: 5px;
-    }
-    .t-profile .details{
-        color: #767676;
-    }
-</style>
 </html>

@@ -1,0 +1,41 @@
+html{
+    background-color: #EDF3F7;
+}
+#panel-viewer{
+    cursor: ew-resize;
+    -webkit-user-drag: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#panel-viewer img{
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+.t-container{
+    margin-top: 15px;
+}
+.t-header{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.t-header .img-md{
+    max-width:200px;
+}
+.t-profile{
+    padding: 30px;
+}
+.t-profile .basics{
+    color: #0f75bd;
+    display: block;
+    margin-bottom: 5px;
+}
+.t-profile .details{
+    color: #767676;
+}
+.t-profile .answer{
+    color: #505050;
+}
