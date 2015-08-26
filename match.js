@@ -1,20 +1,24 @@
 $(function() {
     var t60 = function(){ //show some RequireJS-like module format
-
     var $arr;
-
     return {
 
-        index: 0,
-
         init: function () {
-            $arr = [$('#turn-l'), $('#turn-r'), $('#turn-m')];
+            this.index              = 0;
+            $arr                    = [$('#turn-l'), $('#turn-r'), $('#turn-m')];
+            this.preloadImages();
             this.registerEvents();
         },
 
         iterate: function (i) {
             this.index = this.withinBounds(i + this.index);
             this.setSrc();
+        },
+
+        preloadImages: function(){
+            for(var i = 1; i <= 36; i++){
+                $('<img/>')[0].src =  'img/360/' + i + '.jpg';
+            }
         },
 
         setSrc: function () {
@@ -57,22 +61,22 @@ $(function() {
         },
 
         dragPosition: function(e, factor){
-            var movement = Math.round((this.x - e.pageX) * factor);
-            this.index = this.withinBounds(movement);
+            var movement        = Math.round((this.x - e.pageX) * factor);
+            this.index          = this.withinBounds(movement);
             this.setSrc();
         },
 
         endDrag: function () {
-            this.watch = false;
+            this.watch          = false;
         },
 
         startDrag: function (e) {
-            this.watch = true;
-            this.x = e.pageX;
+            this.watch          = true;
+            this.x              = e.pageX;
         },
 
         startTimer: function (i) {
-            this.ticking = true;
+            this.ticking        = true;
             setTimeout(function () {
                 if (this.ticking === true) {
                     this.iterate(i);
@@ -82,7 +86,7 @@ $(function() {
         },
 
         stopTimer: function () {
-            this.ticking = false;
+            this.ticking        = false;
         },
 
         withinBounds: function (indx) {
@@ -94,7 +98,5 @@ $(function() {
             }
             return indx;
         }
-
     }.init();
-}();
-});
+    }();});
