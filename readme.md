@@ -1,3 +1,3 @@
-##A 100 lines or less play file
+##A 100 lines of code or less play file
 
-360 match visualizer
+Match360 visualizer

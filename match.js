@@ -1,4 +1,5 @@
-var t60 = function(){ //show some RequireJS-like module format
+$(function() {
+    var t60 = function(){ //show some RequireJS-like module format
 
     var $arr;
 
@@ -96,3 +97,4 @@ var t60 = function(){ //show some RequireJS-like module format
 
     }.init();
 }();
+});
