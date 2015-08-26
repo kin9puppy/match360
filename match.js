@@ -2,7 +2,6 @@ $(function() {
     var t60 = function(){ //show some RequireJS-like module format
     var $arr;
     return {
-
         init: function () {
             this.index              = 0;
             $arr                    = [$('#turn-l'), $('#turn-r'), $('#turn-m')];
@@ -54,9 +53,7 @@ $(function() {
                 self.endDrag();
             });
             $(document).on('mousemove', '#panel-viewer', function (e) {
-                if(self.watch === true){
-                    self.dragPosition(e, .12);
-                }
+                if(self.watch === true){ self.dragPosition(e, .12); }
             });
         },
 
