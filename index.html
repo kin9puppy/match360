@@ -9,13 +9,13 @@
     <!-- woman images from http://fashion360animation.com/ -->
 </head>
 <body>
-<div class="container">
+<div class="container t-container">
 
     <!-- heading -->
     <div class="row">
         <div class="col-lg-12 t-header">
             <img alt="Match360" src="img/match.png" class="img-md">
-                <small>Match viewer</small>
+                <span class="small-text">Match viewer</span>
             </h1>
         </div>
     </div>
@@ -77,12 +77,23 @@
 </div>
 </body>
 <style>
+    html{
+        background-color: #EDF3F7;
+    }
+    .t-container{
+        margin-top: 15px;
+    }
     .t-header{
         margin-top: 20px;
         margin-bottom: 10px;
     }
     .t-header .img-md{
         max-width:200px;
+    }
+    .t-header .small-text{
+        margin: 5px 10px;
+        color: #767676;
+        font-size: 13px;
     }
     .t-profile{
         padding: 30px;
